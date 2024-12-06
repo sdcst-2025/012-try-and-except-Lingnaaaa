@@ -21,3 +21,11 @@ The square root of 3.0 is 1.7320508075688772
 """
 import math
 
+x=input('Enter a number:')
+try:
+    x=int(x)
+    x=float(x)
+    y=x**(0.5)
+    print(y)
+except Exception as e:
+    print('There is no square root')

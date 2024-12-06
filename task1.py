@@ -8,6 +8,9 @@
 # block so that the user will allow them to enter an integer,
 # or display an error message if they enter in something else.
 
-number = input("Please enter in an integer value")
-number = int(number)
-print(number)
+x=input('Please enter in an integer number:')
+try:
+    x=int(x)
+    print(x)
+except Exception as e:
+    print('This was an error, try again')
